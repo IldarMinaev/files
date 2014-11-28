@@ -1,0 +1,8 @@
+<inputs>
+<jmx name="wls-template" template="true" username="user" password="password" provider-packages="weblogic.management.remote" persistent-connection="true"></jmx>
+<jmx name="meservernodename.jvm" url="service:jmx:rmi:///jndi/rmi://myserveradress:port/jmxrmi" persistent-connection="true" />
+</inputs>
+<outputs>
+<console name="console" />
+<graphite name="graphite" host="graphite-server-name" port="2003" />
+</outputs>
